@@ -13,7 +13,7 @@ myhostname = <%=servername%>
 alias_maps = hash:/etc/aliases
 alias_database = hash:/etc/aliases
 myorigin = /etc/mailname
-mydestination = <%=servername%> , localhost.example.com, localhost,<%=domain=>
+mydestination = <%=servername%> , localhost.example.com, localhost, <%=domainname%>
 relayhost = 
 mynetworks = 127.0.0.0/8
 mailbox_command = /usr/lib/dovecot/deliver -c /etc/dovecot/conf.d/01-mail-stack-delivery.conf -m "${EXTENSION}"

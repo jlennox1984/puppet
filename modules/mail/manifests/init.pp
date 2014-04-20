@@ -1,4 +1,4 @@
-define mail::server($server,$domain){
+define mail::server($servername,$domainname){
 
  package {
   "postfix": ensure=>'installed';
